@@ -4,7 +4,7 @@
         <Logo/>
 
 
-        <router-link to="app" :class="{ active: $route.name === 'dashboard' }">
+        <router-link to="dashboard" :class="{ active: $route.name === 'dashboard' }">
             <img :src="images.overviewIcon" alt="">
             <span>Overview</span>
         </router-link>

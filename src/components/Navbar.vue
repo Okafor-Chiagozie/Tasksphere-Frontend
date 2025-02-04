@@ -36,9 +36,12 @@
                 <li>
                     <a href="#contact">Contact</a>
                 </li>
-                <li>
+                <router-link to="dashboard">
+                    <li>Dashboard</li>
+                </router-link>
+                <!-- <li>
                     <router-link to="/login">Login</router-link>
-                </li>
+                </li> -->
             </ul>
             <div class="icons">
                 <font-awesome-icon :icon="['far', 'user']" />

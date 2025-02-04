@@ -43,7 +43,7 @@ const router = createRouter({
       component: AuthLayout,
       children : [
         {
-          path: '',
+          path: '/dashboard',
           name: 'dashboard',
           component: DashboardView,
         },
@@ -97,7 +97,8 @@ router.beforeEach((to, from, next)=>{
   if (to.matched.some(record => record.meta.requiresAuth)) {
     const token = localStorage.getItem('authToken');
     if (!token) {
-      next({name: 'login'});
+      // next({name: 'login'});
+      next()
     }else{
       next()
     }
